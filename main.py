@@ -46,3 +46,5 @@ for dir in os.listdir(findpath()):
             win32api.ShellExecute(0, "print",file_path, None, ".", 0)
 
 f.close()
+while True:
+    pass
