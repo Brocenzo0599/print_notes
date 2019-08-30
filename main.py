@@ -17,19 +17,13 @@ f1.close()
 
 #Gets date and adds path according to semester and year (FORMAT :  "\SEMESTER YEAR")
 def findpath():
-    print("------------------BEGIN findpath function-------------")
     path = "C:\\Users\\vince\\Google Drive\\Mcgill"
     print(path.endswith("Mcgill"))
     date = dt.date.today()
     if date.month > 6 and path.endswith("Mcgill"):
         path += "\\Fall " + str(date.year)
-        print("Fall " , date.year)
-        print (path)
     elif date.month <=6:
         path += "\\Winter " + str(date.year)
-        print("Winter", date.year)
-        print (path)
-    print("---------------END findpath function--------------------")
     return path
 
 
